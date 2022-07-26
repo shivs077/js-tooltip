@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla JS - Tooltip</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading"><h1>Vanilla JS - Tooltip</h1></div>
+      <h2>Features:</h2>
+      <ul class="features">
+        <li>Add tooltip to any DOM element</li>
+        <li>Tooltip with default styling is displayed below the element</li>
+        <li>
+          Automatically position tooltip to top of the element if enough space
+          is not available below it
+        </li>
+        <li>You can override the tooltip look and feel</li>
+        <li>Does not use any third party packages</li>
+      </ul>
+      <div class="divider"></div>
+      <h2>Examples:</h2>
+      <p>
+        Hover over any of the elements below to trigger the tooltip associated
+        with them
+      </p>
+      <button
+        class="example-one"
+        data-tooltip="the tooltip is longer than the element"
+      >
+        Tooltip button</button
+      ><button class="example-two" data-tooltip="HTML<br>tooltip">
+        Tooltip button two
+      </button>
+      <div class="example-three">
+        <label for="email"
+          >Email (with tooltip on icon)
+          <span data-tooltip="Tooltip on an icon">&quest;</span></label
+        >
+        <input id="email" />
+      </div>
+    </div>
+    <footer>
+      <span class="example-footer" data-tooltip="Auto positioning tooltip"
+        >A Tooltip at the bottom</span
+      >
+    </footer>
+  </body>
+</html>
